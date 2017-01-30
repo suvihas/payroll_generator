@@ -1,0 +1,21 @@
+{
+  "name": "payroll_generator",
+  "version": "1.0.0",
+  "description": "payroll app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suvihas/payroll_generator.git"
+  },
+  "author": "suhas",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.8"
+  }
+}

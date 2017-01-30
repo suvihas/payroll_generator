@@ -1,0 +1,160 @@
+/*************************************************
+*   -- Color Palette --
+*
+*   Dark Blue  : #2d3142
+*   Light Blue : #4f5d75
+*   Light Blue : #4f5d75
+*   Gray       : #bfc0c0
+*   White      : #fff
+*   Orange     : #ef8354
+*
+*************************************************/
+
+body {
+  background: white;
+  color: #333;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 50px;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Table */ 
+
+.emp  {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-color: #ccc;
+  border: none;
+}
+
+.emp td {
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 0px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #ccc;
+  color: #333;
+  background-color: #fff;
+}
+
+.emp .emp-td {
+  vertical-align: center
+}
+
+.paytb  {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 600px;
+}
+
+.paytb td {
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 0px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #ccc;
+  color: #333;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.payth-td {
+  font-weight: bold;
+}
+
+tr:last-child {
+ text-align: right;  
+}
+
+.paytb tr:last-child>td {
+ border-bottom-width: 0px; 
+}
+ 
+
+.paytb .paytb-td .payth-td {
+  vertical-align: center
+}
+
+/* Form */
+
+.form-input {
+  border: 1px solid #bfc0c0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: auto;
+}
+
+.payslip-details {
+  border: none;
+  box-sizing: border-box;
+  padding: 10px; 
+}
+
+.btn {
+  background-color: #4f5d75; 
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
+  line-height: 2.5;
+  padding: 0 40px;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover {
+  background-color: #d6774e;
+}
+
+/* Other layout */
+
+.cell {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+
+.header {
+  background-color: #2d3142;
+  margin-bottom: 40px;
+  padding: 40px;
+  padding-top: 100px;
+}
+
+.logo {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+

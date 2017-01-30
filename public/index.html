@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Payslip Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300,400italic">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="cell">
+            <h1 class="logo"><a href='/'>Payslip Generator</a></h1>
+        </div>
+    </div>
+
+    <div class="form">
+        <h3>Employee Information</h3>
+
+        <form id="employeeForm" action="payslip.html" method="get">
+            <div>
+                <table class="emp">
+                    <tr>
+                        <td class="emp-td">&nbsp;&nbsp;&nbsp;
+                            <input class="form-input" type="text" id="fname" name="fname" placeholder="First name" required>
+                            </th>
+                            <td class="emp-td">
+                                <input class="form-input" type="text" id="lname" name="lname" placeholder="Last name" required>
+                                </th>
+                    </tr>
+                    <tr>
+                        <td class="emp-td">$&nbsp;
+                            <input class="form-input" type="number" id="salary" name="salary" placeholder="Annual Salary" min="0" required>
+                        </td>
+                        <td class="emp-td">
+                            <input class="form-input" type="number" id="superrate" name="superrate" placeholder="Super" min="0" max="20" step="0.5" required>&nbsp;%</td>
+                    </tr>
+                    <tr>
+                        <td class="emp-td" colspan="2">
+                            <button class="btn" type="submit">Generate Payslip</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

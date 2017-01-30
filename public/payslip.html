@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+    <title>Payslip Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300,400italic">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body onload="generatePaySlip()">
+    <div class="header">
+        <div class="cell">
+            <h1 class="logo"><a href='/'>Payslip Generator</a></h1>
+        </div>
+    </div>
+
+    <div class="form">
+        <h3>Payslip</h3>
+
+        <form id="payslipForm" action="/processPayment" method="post">
+
+            <h4><div id="empName"> <div></h4>
+            <input type="hidden" id="fullName" name="fullName" />
+            <input type="hidden" id="month" name="month" />
+
+            <table class="paytb">
+                <tr>
+                    <td class="payth-td">Pay Date</th>
+                        <td class="paytb-td">
+                            <input class="payslip-details" type="text" id="date" name="date" />
+                            </th>
+                </tr>
+                <tr>
+                    <td class="payth-td">Pay Frequency</td>
+                    <td class="paytb-td">
+                        <input class="payslip-details" type="text" id="freq" name="freq" value="Monthly" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="payth-td">Annual Income</td>
+                    <td class="paytb-td">
+                        <input class="payslip-details" type="text" id="annualIncome" name="annualIncome" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="payth-td">Gross Income</td>
+                    <td class="paytb-td">
+                        <input class="payslip-details" type="text" id="gross" name="gross" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="payth-td">Income Tax</td>
+                    <td class="paytb-td">
+                        <input class="payslip-details" type="text" id="incomeTax" name="incomeTax" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="payth-td">Net Income</td>
+                    <td class="paytb-td">
+                        <input class="payslip-details" type="text" id="netIncome" name="netIncome" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="payth-td">Super</td>
+                    <td class="paytb-td">
+                        <input class="payslip-details" type="text" id="superAmount" name="superAmount" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="payth-td">Pay</td>
+                    <td class="paytb-td">
+                        <input class="payslip-details" type="text" id="pay" name="pay" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="paytb-btn" colspan="2">
+                        <button class="btn" type="submit">Pay</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
